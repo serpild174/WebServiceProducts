@@ -1,0 +1,8 @@
+features:
+    webservice_products:
+        label: 'Web Service Products Sync'
+
+        commands:
+            - 'oro:cron:webservice-sync'
+        api_resources:
+            - 'Oro\Bundle\ProductBundle\Entity\Product'

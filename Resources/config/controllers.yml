@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: true
+
+    Acme\Bundles\WebServiceProducts\Controller\WebServiceController:
+        calls:
+            - [setContainer, ['@Psr\Container\ContainerInterface']]
+        tags:
+            - { name: container.service_subscriber }

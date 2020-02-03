@@ -1,0 +1,6 @@
+services: 
+    Acme\Bundles\WebServiceProducts\Command\SyncCustomCommand:
+        public: false
+        class: Acme\Bundles\WebServiceProducts\Command\SyncCustomCommand
+        tags:
+            - { name: console.command }
